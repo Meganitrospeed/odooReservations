@@ -1,1 +1,1 @@
-from . import appointment
+from . import models
