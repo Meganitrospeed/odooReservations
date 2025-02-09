@@ -7,6 +7,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/appointment_views.xml',
+        'views/appointment_calendar_view.xml',
     ],
     'installable': True,
     'application': True,
