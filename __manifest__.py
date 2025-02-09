@@ -1,6 +1,6 @@
 {
     'name': 'Appointment Manager',
-    'version': '1.0',
+    'version': '1.1',
     'summary': 'Módulo para gestionar citas o reservas',
     'author': 'Juan Thielmann',
     'depends': ['base'],
