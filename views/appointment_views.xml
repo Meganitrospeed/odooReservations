@@ -1,0 +1,42 @@
+<odoo>
+    <record id="view_appointment_form" model="ir.ui.view">
+        <field name="name">appointment.form</field>
+        <field name="model">appointment.manager</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date"/>
+                        <field name="customer"/>
+                        <field name="state" readonly="1"/>
+                    </group>
+                    <footer>
+                        <button name="action_confirm" type="object" string="Confirmar" class="oe_highlight"/>
+                        <button name="action_cancel" type="object" string="Cancelar"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_appointment_tree" model="ir.ui.view">
+        <field name="name">appointment.tree</field>
+        <field name="model">appointment.manager</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="date"/>
+                <field name="customer"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="menu_appointment_root" name="Gestión de Citas" sequence="10"/>
+
+    <menuitem id="menu_appointment" name="Citas" parent="menu_appointment_root" sequence="20"/>
+
+    <menuitem id="menu_appointment_action" name="Administrar Citas" parent="menu_appointment"
+              action="action_appointment"/>
+</odoo>
