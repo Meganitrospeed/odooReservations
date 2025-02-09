@@ -1,2 +1,2 @@
-id,name,model_id,group_id,perm_read,perm_write,perm_create,perm_unlink
-model_appointment_manager,appointment_manager,appointment.manager,,1,1,1,1
+id,name,model_id:id,group_id,perm_read,perm_write,perm_create,perm_unlink
+odooReservations.model_appointment_manager,appointment_manager,model_appointment_manager,base.group_user,1,1,1,1
