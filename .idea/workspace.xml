@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d77149c-1a84-4300-8d44-0dcf48239787" name="Changes" comment="">
+    <list default="true" id="6d77149c-1a84-4300-8d44-0dcf48239787" name="Changes" comment="Corrected model definitions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/appointment.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/appointment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/security/ir.model.access.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,11 +66,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739068907778</updated>
-      <workItem from="1739068908545" duration="1273000" />
+      <workItem from="1739068908545" duration="3177000" />
     </task>
+    <task id="LOCAL-00001" summary="Corrected model definitions">
+      <option name="closed" value="true" />
+      <created>1739070232466</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739070232466</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Corrected model definitions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected model definitions" />
   </component>
 </project>
