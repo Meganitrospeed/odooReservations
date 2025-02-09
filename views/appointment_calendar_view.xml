@@ -6,7 +6,7 @@
         <field name="model">appointment.manager</field>
         <field name="arch" type="xml">
             <!-- Note the addition of date_start="date" -->
-            <calendar string="Calendario de Citas" date_start="date">
+            <calendar string="Calendario de Citas" date_start="date" color="state">
                 <!-- Additional fields to display in the calendar event tooltip -->
                 <field name="state"/>
                 <field name="create_uid"/>

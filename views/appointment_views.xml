@@ -22,10 +22,13 @@
                         <field name="customer"/>
                         <field name="state" readonly="1"/>
                     </group>
-                    <footer>
-                        <button name="action_confirm" type="object" string="Confirmar" class="oe_highlight"/>
-                        <button name="action_cancel" type="object" string="Cancelar"/>
-                    </footer>
+        <!-- Move buttons here -->
+        <group>
+            <button name="action_confirm" type="object" string="Confirmar" class="oe_highlight"
+                invisible="state != 'draft'"/>
+            <button name="action_cancel" type="object" string="Cancelar"
+                invisible="state == 'cancelled'"/>
+        </group>
                 </sheet>
             </form>
         </field>
