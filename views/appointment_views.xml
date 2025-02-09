@@ -1,9 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <!-- 1. Define the action for appointments -->
+    <record id="action_appointment" model="ir.actions.act_window">
+        <field name="name">Citas</field>
+        <field name="res_model">appointment.manager</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{}</field>
+        <field name="target">current</field>
+    </record>
+
+    <!-- 2. Define the form view for appointments -->
     <record id="view_appointment_form" model="ir.ui.view">
         <field name="name">appointment.form</field>
         <field name="model">appointment.manager</field>
         <field name="arch" type="xml">
-            <form>
+            <form string="Appointment">
                 <sheet>
                     <group>
                         <field name="name"/>
@@ -20,11 +31,12 @@
         </field>
     </record>
 
+    <!-- 3. Define the tree view for appointments -->
     <record id="view_appointment_tree" model="ir.ui.view">
         <field name="name">appointment.tree</field>
         <field name="model">appointment.manager</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree string="Appointments">
                 <field name="name"/>
                 <field name="date"/>
                 <field name="customer"/>
@@ -33,10 +45,14 @@
         </field>
     </record>
 
+    <!-- 4. Define menu items -->
+
+    <!-- Root menu for appointments -->
     <menuitem id="menu_appointment_root" name="Gestión de Citas" sequence="10"/>
 
+    <!-- Submenu for appointments -->
     <menuitem id="menu_appointment" name="Citas" parent="menu_appointment_root" sequence="20"/>
 
-    <menuitem id="menu_appointment_action" name="Administrar Citas" parent="menu_appointment"
-              action="action_appointment"/>
+    <!-- Menu item that launches the appointment action -->
+    <menuitem id="menu_appointment_action" name="Administrar Citas" parent="menu_appointment" action="action_appointment"/>
 </odoo>
