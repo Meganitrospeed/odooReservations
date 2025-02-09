@@ -1,11 +1,13 @@
 from odoo import models, fields, api
 
-class Appointment(models.Model):
-    _name = 'appointment.manager'
-    _description = 'Gestión de Citas'
 
-    name = fields.Char(string="Título", required=True)
-    date = fields.Datetime(string="Fecha y Hora", required=True)
+class AppointmentManager(models.Model):
+    _name = 'appointment.manager'
+    _description = 'Appointment Manager'
+
+    name = fields.Char('Appointment Name')
+    date = fields.Datetime('Appointment Date')
+    # Additional fields
     customer = fields.Many2one('res.partner', string="Cliente", required=True)
     state = fields.Selection([
         ('draft', 'Borrador'),
